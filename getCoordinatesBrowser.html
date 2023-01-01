@@ -1,0 +1,7 @@
+<script type="text/javascript">
+	navigator.geolocation.getCurrentPosition(function(p){
+		console.log(p.coords.latitude+""+p.coords.longitude);
+	},function(err){
+		console.warn("Error Code"+err.code+": "+err.message);
+});
+</script>
